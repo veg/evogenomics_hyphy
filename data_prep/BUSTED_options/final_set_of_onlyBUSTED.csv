@@ -1,0 +1,41 @@
+ensembl_ID,gene_name,BUSTED_pvalue,notes
+ENSG00000088682,COQ9,0.000606636,apparently mitochondrial?????
+ENSG00000123154,WDR83,0.000680882,WD repeat domain 83; not very interesting
+ENSG00000075426,FOSL2,0.000954833,fos-related antigen2, regulates cell proliferation/differentiation/transformation
+ENSG00000120129,DUSP1,0.00125078,dual-specificity phospatase. inactivates MAP. cellular response to environmental stress.
+ENSG00000171435,KSR2,0.001480504,kinase suppressor of ras2. reduces glucose and fatty acid oxidation, involved in type2 diabetes
+ENSG00000145354,CISD2,0.001764008,zinc finger protein in ER, defects cause Wolfram syndrome2, possible Ca homeostasis involvement
+ENSG00000249884,RNF103-CHMP3,0.002376971,weird hybrid thing lets not use it
+ENSG00000172375,C2CD2L,0.002647206,C2 calcium-dependent domain containing 2-like
+ENSG00000171132,PRKCE,0.002772339,protein kinase C epsilon-type, does a whole bunch of things in cardiac muscle 
+ENSG00000123388,HOXC11,0.003743968,hox gene possibly in early intestinal development
+ENSG00000070831,CDC42,0.004019145,cell division controlling protein 42 homolog, it's a GTPase in the Rho family  
+ENSG00000164463,CREBRF,0.006074875,missense variant makes Samoans overweight says a GWAS http://www.nature.com/ng/journal/v48/n9/full/ng.3620.html
+ENSG00000104164,BLOC1S6,0.007925127,biogenesis of lysosomal organelles complex 1 subunit 6; intracellular vesicle trafficking. mutations cause disease.
+ENSG00000166689,PLEKHA7,0.008631871,adherins junction protein and even has a full wikipedia page!
+
+======================================================
+ENSG00000158850,B4GALT3,0.010391325,N/A
+ENSG00000084072,PPIE,0.01318907,N/A
+ENSG00000095794,CREM,0.014237227,N/A
+ENSG00000137106,GRHPR,0.014545513,N/A
+ENSG00000131043,AAR2,0.016455327,N/A
+ENSG00000164007,CLDN19,0.01658048,N/A
+ENSG00000171160,MORN4,0.019235334,N/A
+ENSG00000160310,PRMT2,0.020772925,N/A
+ENSG00000146731,CCT6A,0.021688664,N/A
+ENSG00000172409,CLP1,0.023409207,N/A
+ENSG00000112137,PHACTR1,0.025112773,N/A
+ENSG00000196182,STK40,0.02611833,N/A
+ENSG00000101438,SLC32A1,0.026294768,N/A
+ENSG00000102805,CLN5,0.026801488,N/A
+ENSG00000167526,RPL13,0.032571409,N/A
+ENSG00000149499,EML3,0.032573304,N/A
+ENSG00000262068,KRTAP3-1,0.033664191,N/A
+ENSG00000120251,GRIA2,0.034665367,N/A
+ENSG00000113327,GABRG2,0.037598461,N/A
+ENSG00000152611,CAPSL,0.038834718,N/A
+ENSG00000116586,LAMTOR2,0.038914442,N/A
+ENSG00000117602,RCAN3,0.040830968,N/A
+ENSG00000118971,CCND2,0.041765173,N/A
+ENSG00000164076,CAMKV,0.044861429,N/A

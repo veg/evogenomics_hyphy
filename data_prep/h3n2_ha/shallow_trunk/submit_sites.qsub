@@ -1,0 +1,43 @@
+#!/bin/bash
+#PBS -N IAV
+#PBS -q eternity
+#PBS -l nodes=2:ppn=50
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+
+module load hyphy
+
+FELOPT=6
+SLACOPT=1
+MEMEOPT=11
+ALPHA=0.1
+MPIRUN=/opt/scyld/openmpi/1.6.3/gnu/bin/mpirun
+
+
+DTYPE=$1 # TRUNK or SHALLOW
+
+DAT=/home/sjspielman/Dropbox/Science/Manuscripts/Current/book-chapter/h3n2_ha/shallow_trunk/${DTYPE}.dat
+OUTPATH=/home/sjspielman/Dropbox/Science/Manuscripts/Current/book-chapter/h3n2_ha/shallow_trunk/output
+mkdir -p $OUTPATH
+NUCFIT=$DAT.nucfit
+FELOUTPUT=$DAT.fel
+MEMEOUTPUT=$DAT.meme
+SLACOUTPUT=$DAT.slac
+
+
+####### SLAC #######
+(echo 1; echo 1; echo $DAT; echo 2; echo "012345"; echo "Y"; echo $NUCFIT; echo 5; echo $SLACOPT; echo 1; echo 1; echo 1; echo $ALPHA; echo 2; echo $SLACOUTPUT; echo 1) | $MPIRUN -np 100 /opt/hyphy/hyphy-2.2.7/HYPHYMPI LIBPATH=/opt/hyphy/hyphy-2.2.7/res /opt/hyphy/hyphy-2.2.7/res/TemplateBatchFiles/QuickSelectionDetection.bf
+
+###### FEL ########
+(echo 1; echo 2; echo $NUCFIT; echo 5; echo $FELOPT; echo $ALPHA; echo 1; echo $FELOUTPUT) | $MPIRUN -np 100 /opt/hyphy/hyphy-2.2.7/HYPHYMPI LIBPATH=/opt/hyphy/hyphy-2.2.7/res /opt/hyphy/hyphy-2.2.7/res/TemplateBatchFiles/QuickSelectionDetection.bf
+
+##### MEME #######
+(echo 1; echo 2; echo $NUCFIT; echo 5; echo $MEMEOPT; echo $ALPHA; echo "N"; echo $MEMEOUTPUT) | $MPIRUN -np 100 /opt/hyphy/hyphy-2.2.7/HYPHYMPI LIBPATH=/opt/hyphy/hyphy-2.2.7/res /opt/hyphy/hyphy-2.2.7/res/TemplateBatchFiles/QuickSelectionDetection.bf
+
+mv $DAT.* $OUTPATH
+
+
+

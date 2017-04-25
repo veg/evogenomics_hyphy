@@ -1,0 +1,11 @@
+Resulting alignments (38 total), of ~2500 examined from the Petrov eLife paper, which show significant signal with BUSTED (all branches tested) but DO NOT show evidence for positive selection w/ MEME, aBSREL, or FEL. Significance assessed at alpha=0.05 threshold.
+
+FASTA files are named according to the human ENSEMBL id. NOTE: these alignments differ slightly from eLife paper b/c only primates are included (hence _primates) in file names. The original paper examined 24 mammalian sequences/ortholog.
+All alignments were processed w/ primates.tre (primates_busted.tre just has every node annotated as {FG}). Same topology as used in eLife. We just let HyPhy infer the branch lengths.
+
+final_set_of_onlyBUSTED.csv contains the ensembl IDs, gene names, busted p-value. For the "best" pvalues (above ===== divider), I added some annotations about what the gene is doing to give us some sense of which gene(s) we might like to actually include. I'd suggest one of these, since they are the most "biologically interesting":
+    DUSP1
+    KSR2
+    CISD2
+    HOXC11
+    CREBRF
