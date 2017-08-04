@@ -10,5 +10,4 @@
 
 2. JSONs can be parsed easily in Python (`json` package) and R (`jsonlite` package). This [webpage](link-tbd) defines all fields in the output.
 
-
 3. Please use [Issues](github.com/veg/hyphy/issues) with questions on HyPhy usage.
