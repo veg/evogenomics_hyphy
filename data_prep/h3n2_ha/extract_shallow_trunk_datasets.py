@@ -1,3 +1,11 @@
+"""
+    Extract two subsetted datasets from h3n2_ha_subset.aln:
+        1) Trunk lineage
+        2) Shallow lineage (a single terminal clade)
+    
+    Note that phylogenies are *not* reconstructed for each of these datasets. Instead, the large tree is merely pruned to contain taxa of interest for trunk and shallow each.
+"""
+
 import dendropy
 from Bio import AlignIO
 import numpy as np
@@ -15,45 +23,45 @@ output_shallow = "shallow.dat"
 
 
 ######### Trunk #########
-# input_tree = "h3n2_ha_subset.tre"
-# trunklabel = "TRUNK"
-# nleaves_per = 2
-# 
-# tree = dendropy.Tree.get(
-#     path=input_tree,
-#     schema='newick',
-#     preserve_underscores=True)
-# tree.resolve_polytomies(update_bipartitions = True)
-# 
-# baseNode = "'CY011824'"
-# for node in tree.postorder_node_iter():
-#     if str(node.taxon) == baseNode:
-#         node.label = trunklabel
-#         for ancNode in node.ancestor_iter():
-#             ancNode.label = trunklabel
-#         break
-#              
-# retain = []
-# for node in tree.preorder_node_iter():
-#     if node.label == trunklabel:
-#         leaves = 0
-#         for leaf in node.leaf_iter():
-#             retain.append(leaf.taxon)
-#             leaves += 1
-#             if leaves > nleaves_per:
-#                 break
-# tree.retain_taxa(retain)
-# tree.write(path = output_trunk_tre, schema="newick")    
-# os.system('sed -i "s/TRUNK//g" ' + output_trunk_tre)
-# os.system('sed -i "s/\[\&U] //g" ' + output_trunk_tre)
-# 
-# 
-# retainstr = [str(x).replace("'","") for x in retain]
-# with open(output_trunk_aln, "w") as f:
-#     for rec in aln:
-#         if rec.id in retainstr:
-#             f.write(">" + rec.id  + "\n" + str(rec.seq) + "\n")
-# os.system("cat " + output_trunk_aln + " " + output_trunk_tre  + " > " + output_trunk)
+input_tree = "h3n2_ha_subset.tre"
+trunklabel = "TRUNK"
+nleaves_per = 2
+
+tree = dendropy.Tree.get(
+    path=input_tree,
+    schema='newick',
+    preserve_underscores=True)
+tree.resolve_polytomies(update_bipartitions = True)
+
+baseNode = "'CY011824'"
+for node in tree.postorder_node_iter():
+    if str(node.taxon) == baseNode:
+        node.label = trunklabel
+        for ancNode in node.ancestor_iter():
+            ancNode.label = trunklabel
+        break
+             
+retain = []
+for node in tree.preorder_node_iter():
+    if node.label == trunklabel:
+        leaves = 0
+        for leaf in node.leaf_iter():
+            retain.append(leaf.taxon)
+            leaves += 1
+            if leaves > nleaves_per:
+                break
+tree.retain_taxa(retain)
+tree.write(path = output_trunk_tre, schema="newick")    
+os.system('sed -i "s/TRUNK//g" ' + output_trunk_tre)
+os.system('sed -i "s/\[\&U] //g" ' + output_trunk_tre)
+
+
+retainstr = [str(x).replace("'","") for x in retain]
+with open(output_trunk_aln, "w") as f:
+    for rec in aln:
+        if rec.id in retainstr:
+            f.write(">" + rec.id  + "\n" + str(rec.seq) + "\n")
+os.system("cat " + output_trunk_aln + " " + output_trunk_tre  + " > " + output_trunk)
 
 
 ########## Shallow #########
