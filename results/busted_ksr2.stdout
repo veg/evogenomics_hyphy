@@ -1,0 +1,43 @@
+
+Analysis Description
+--------------------
+BUSTED (branch-site unrestricted statistical test of episodic
+diversification) uses a random effects branch-site model fitted jointly
+to all or a subset of tree branches in order to test for alignment-wide
+evidence of episodic diversifying selection. Assuming there is evidence
+of positive selection (i.e. there is an omega > 1), BUSTED will also
+perform a quick evidence-ratio style analysis to explore which
+individual sites may have been subject to selection.
+
+- __Requirements__: in-frame codon alignment and a phylogenetic tree (optionally annotated
+with {})
+
+- __Citation__: *Gene-wide identification of episodic selection*, Mol Biol Evol.
+32(5):1365-71
+
+- __Written by__: Sergei L Kosakovsky Pond
+
+- __Contact Information__: spond@temple.edu
+
+- __Analysis Version__: 1.2
+
+
+
+### Loaded an MSA with 9 sequences and 949 codons from '/home/sjspielman/book-chapter-2017/datasets/ksr2.dat'
+
+> A tree was found in the data file: `(((((((HUM,PAN),GOR),PON),GIB),(MAC,BAB)),MAR),BUS)`
+>Would you like to use it? Y
+
+
+Selected 15 branches as the test (foreground) set: HUM,PAN,Node6,GOR,Node5,PON,Node4,GIB,Node3,MAC,BAB,Node12,Node2,MAR,BUS
+
+### Obtaining initial branch lengths under the GTR model
+Log(L) = -5768.008751385815
+
+### Fitting the unconstrained branch-site model
+Log(L) = -5319.672674007421. Unrestricted class omega = 108.9956849115568 (weight = 0.0003792961349278528)
+
+### Fitting the branch-site model that disallows omega > 1 among foreground branches
+Log(L) = -5326.187934878112
+
+### Likelihood ratio test for episodic positive selection, p = 0.001480669585861238
