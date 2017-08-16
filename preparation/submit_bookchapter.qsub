@@ -1,0 +1,62 @@
+#!/bin/bash
+#PBS -N bookchapter_analyses
+#PBS -q eternity
+#PBS -l nodes=1:ppn=64
+#PBS -e e.$PBS_JOBNAME-$PBS_JOBID
+#PBS -o o.$PBS_JOBNAME-$PBS_JOBID
+
+
+export PATH=/usr/local/bin:$PATH
+
+PROJPATH=/home/sjspielman/book-chapter-2017
+DATAPATH=$PROJPATH/datasets
+RESULTPATH=$PROJPATH/results
+
+CHOICE=$1
+
+
+if [[ $CHOICE -eq 1 ]]; then
+    #### BUSTED on ksr2 dataset ####
+    echo "running busted on ksr2"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/BUSTED.bf Universal $DATAPATH/ksr2.dat Y "All" "" > $RESULTPATH/busted_ksr2.stdout
+elif [[ $CHOICE -eq 2 ]]; then
+    #### RELAX on pb2 dataset ####
+    echo "running relax on pb2"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/RELAX.bf Universal $DATAPATH/pb2_full_Hu_test.fasta Y "test" "All"  > $RESULTPATH/relax_pb2.stdout
+elif [[ $CHOICE -eq 3 ]]; then
+    ### ABSREL on HIV ###
+    echo "running absrel on hiv"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/BranchSiteREL.bf Universal Yes No $DATAPATH/hiv1_transmission.dat Y All "" > $RESULTPATH/absrel_hiv.stdout
+elif [[ $CHOICE -eq 4 ]]; then
+    ### SLAC on H3 ###
+    echo "running slac on all h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/SLAC.bf Universal $DATAPATH/h3n2_ha_subset.dat Y All 100 0.1  > $RESULTPATH/slac_h3_full.stdout
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/SLAC.bf Universal $DATAPATH/shallow.dat Y All 100 0.1  > $RESULTPATH/slac_h3_shallow.stdout
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/SLAC.bf Universal $DATAPATH/trunk.dat Y All 100 0.1  > $RESULTPATH/slac_h3_trunk.stdout
+elif [[ $CHOICE -eq 5 ]]; then
+    ### FUBAR on H3 #####
+    echo "running fubar on all h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/FUBAR.bf Universal 1 $DATAPATH/h3n2_ha_subset.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_full.stdout
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/FUBAR.bf Universal 1 $DATAPATH/shallow.dat Y 20 5 2000000 1000000 100 0.5  > $RESULTPATH/fubar_h3_shallow.stdout
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/FUBAR.bf Universal 1 $DATAPATH/trunk.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_trunk.stdout
+elif [[ $CHOICE -eq 6 ]]; then
+    echo "running meme on full h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf Universal $DATAPATH/h3n2_ha_subset.dat Y All 0.1    > $RESULTPATH/meme_h3_full.stdout
+elif [[ $CHOICE -eq 7 ]]; then
+    echo "running meme on shallow h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf Universal $DATAPATH/shallow.dat Y All 0.1  > $RESULTPATH/meme_h3_shallow.stdout
+elif [[ $CHOICE -eq 8 ]]; then
+     echo "running meme on trunk h3"
+   ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/MEME.bf Universal $DATAPATH/trunk.dat Y All 0.1  > $RESULTPATH/meme_h3_trunk.stdout
+elif [[ $CHOICE -eq 9 ]]; then
+    echo "running fel on full h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/FEL.bf Universal $DATAPATH/h3n2_ha_subset.dat Y All Yes 0.1   > $RESULTPATH/fel_h3_full.stdout
+elif [[ $CHOICE -eq 10 ]]; then
+    echo "running fel on shallow h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/FEL.bf Universal $DATAPATH/shallow.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_shallow.stdout
+elif [[ $CHOICE -eq 11 ]]; then
+     echo "running fel on trunk h3"
+    ~/hyphy/HYPHYMP LIBPATH=/home/sjspielman/hyphy/res/ ~/hyphy/res/TemplateBatchFiles/SelectionAnalyses/FEL.bf Universal $DATAPATH/trunk.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_trunk.stdout
+else
+    echo "bad choice"
+fi
