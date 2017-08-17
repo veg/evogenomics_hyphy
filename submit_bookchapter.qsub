@@ -23,7 +23,11 @@ BATCHPATH=$LIBPATH/TemplateBatchFiles/SelectionAnalyses
 if [[ $CHOICE -eq 1 ]]; then
     #### BUSTED on ksr2 dataset ####
     echo "running busted on ksr2"
+    cp $DATAPATH/ksr2.dat cp $DATAPATH/ksr2_leaves.dat
+
     $MP LIBPATH=$LIBPATH $BATCHPATH/BUSTED.bf Universal $DATAPATH/ksr2.dat Y "All" "" > $RESULTPATH/busted_ksr2.stdout
+    $MP LIBPATH=$LIBPATH $BATCHPATH/BUSTED.bf Universal $DATAPATH/ksr2_leaves.dat Y "Leaves" "" > $RESULTPATH/busted_ksr2_leaves.stdout
+
 elif [[ $CHOICE -eq 2 ]]; then
     #### RELAX on pb2 dataset ####
     echo "running relax on pb2"
