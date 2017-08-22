@@ -1,34 +1,36 @@
 from Bio import AlignIO
 import numpy as np
+#import dendropy ## Dendropy is being exceedingly difficult so pruning will be done in R w/ ape library
 
-a = AlignIO.read("pb2.fasta", "fasta") ## 80 human and 320 avian. somehow we lost an avian..?
+nav = 20
+nhu = 15
 
-nAv = 40
-nHu = 20
 
-human = {}
-avian = {}
-for record in a:
-    if record.id.startswith("Hu_"):
-        human[record.id] = str(record.seq) 
-    elif record.id.startswith("Av_"):
-        avian[record.id] = str(record.seq) 
+aln = AlignIO.read("tamuriPB2.phy", "phylip-relaxed")
 
-final = {}
-human_random = np.random.choice(range(0, len(human)), size=nHu, replace=False)
-avian_random = np.random.choice(range(0, len(avian)), size=nAv, replace=False)
 
-with open("pb2_subset.fasta", "w") as f:
-    x = 0
-    for entry in human:
-        if x in human_random:
-            f.write(">" + entry + "\n" + human[entry] + "\n")
-        x+=1
-        
-    x = 0
-    for entry in avian:
-        if x in avian_random:
-            print "Av"
-            f.write(">" + entry + "\n" + avian[entry] + "\n")
-        x+=1
-        
+avian = []
+human = []
+for i in range(len(aln)):
+    isavian = str(aln[i].id).startswith("Av_")
+    if isavian:
+        avian.append(i)
+    else:
+        human.append(i)
+
+keepav = list(np.random.choice(avian, size=nav, replace=False))
+keephu = list(np.random.choice(human, size=nhu, replace=False))
+
+
+keep = keepav + keephu
+chucked_ids = []
+
+with open("pb2_small.dat", "w") as f:
+    for i in range(len(aln)):
+        if i in keep:
+            f.write(">" + str(aln[i].id) + "\n" + str(aln[i].seq) + "\n")
+        else:
+            chucked_ids.append(str(aln[i].id))
+
+
+print chucked_ids
