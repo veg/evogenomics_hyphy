@@ -12,7 +12,7 @@ PROJPATH=/home/sjspielman/book-chapter-2017
 DATAPATH=$PROJPATH/datasets
 RESULTPATH=$PROJPATH/results
 
-#CHOICE=$1
+CHOICE=$1
 
 HYPATH=/home/sjspielman/hyphy
 MP=$HYPATH/HYPHYMP
@@ -27,7 +27,7 @@ if [[ $CHOICE -eq 1 ]]; then
 elif [[ $CHOICE -eq 2 ]]; then
     #### RELAX on pb2 dataset ####
     echo "running relax on pb2"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/RELAX.bf Universal $DATAPATH/pb2_full_Hu_test.fasta Y "test" "All"  > $RESULTPATH/relax_pb2.stdout
+    $MP LIBPATH=$LIBPATH $BATCHPATH/RELAX.bf Universal $DATAPATH/pb2.dat Y "test" "All"  > $RESULTPATH/relax_pb2.stdout
 elif [[ $CHOICE -eq 3 ]]; then
     ### ABSREL on HIV ###
     echo "running absrel on hiv"

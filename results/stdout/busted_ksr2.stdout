@@ -23,21 +23,50 @@ with {})
 
 
 
-### Loaded an MSA with 9 sequences and 949 codons from '/home/sjspielman/book-chapter-2017/datasets/ksr2.dat'
+>A tree was found in the data file: `(((((((HUM,PAN),GOR),PON),GIB),(MAC,BAB)),MAR),BUS)`
 
-> A tree was found in the data file: `(((((((HUM,PAN),GOR),PON),GIB),(MAC,BAB)),MAR),BUS)`
->Would you like to use it? Y
+>Would you like to use it (y/n)? Y
 
 
-Selected 15 branches as the test (foreground) set: HUM,PAN,Node6,GOR,Node5,PON,Node4,GIB,Node3,MAC,BAB,Node12,Node2,MAR,BUS
+>Loaded a multiple sequence alignment with **9** sequences, **949** codons, and **1** partitions from `/home/sjspielman/book-chapter-2017/datasets/ksr2.dat`
 
-### Obtaining initial branch lengths under the GTR model
-Log(L) = -5768.008751385815
 
-### Fitting the unconstrained branch-site model
-Log(L) = -5319.672674007421. Unrestricted class omega = 108.9956849115568 (weight = 0.0003792961349278528)
+### Branches to test for selection in the BUSTED analysis
+* Selected 15 branches to test in the BUSTED analysis: `HUM, PAN, Node6, GOR, Node5, PON, Node4, GIB, Node3, MAC, BAB, Node12, Node2, MAR, BUS`
 
-### Fitting the branch-site model that disallows omega > 1 among foreground branches
-Log(L) = -5326.187934878112
 
-### Likelihood ratio test for episodic positive selection, p = 0.001480669585861238
+### Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model
+* Log(L) = -5768.01, AIC-c = 11582.06 (23 estimated parameters)
+
+### Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases
+* Log(L) = -5342.48, AIC-c = 10745.17 (30 estimated parameters)
+* non-synonymous/synonymous rate ratio for *test* =   0.0342
+
+### Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model
+* Log(L) = -5333.46, AIC-c = 10727.13 (30 estimated parameters)
+* non-synonymous/synonymous rate ratio for *test* =   0.0307
+
+### Performing the full (dN/dS > 1 allowed) branch-site model fit
+* Log(L) = -5319.67, AIC-c = 10707.62 (34 estimated parameters)
+* For *test* branches, the following rate distribution for branch-site combinations was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.024     |   99.043    |                                   |
+|        Negative selection         |     0.098     |    0.921    |                                   |
+|      Diversifying selection       |    118.183    |    0.037    |                                   |
+
+
+### Performing the constrained (dN/dS > 1 not allowed) model fit
+* Log(L) = -5326.19, AIC-c = 10718.63 (33 estimated parameters)
+* For *test* branches under the null (no dN/dS > 1 model), the following rate distribution for branch-site combinations was inferred
+
+|          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
+|-----------------------------------|---------------|-------------|-----------------------------------|
+|        Negative selection         |     0.000     |   10.727    |                                   |
+|        Negative selection         |     0.000     |   85.962    |       Collapsed rate class        |
+|         Neutral evolution         |     1.000     |    3.311    |                                   |
+
+----
+## Branch-site unrestricted statistical test of episodic diversification [BUSTED]
+Likelihood ratio test for episodic diversifying positive selection, **p =   0.0015**.
