@@ -39,16 +39,16 @@ elif [[ $CHOICE -eq 3 ]]; then
 elif [[ $CHOICE -eq 4 ]]; then
     ### SLAC on H3 ###
     echo "running slac on all h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_full.dat Y All 100 0.1  > $RESULTPATH/slac_h3_full.md
-    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/shallow.dat Y All 100 0.1  > $RESULTPATH/slac_h3_shallow.md
-    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/trunk.dat Y All 100 0.1  > $RESULTPATH/slac_h3_trunk.md
+    #$MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_full.dat Y All 100 0.1  > $RESULTPATH/slac_h3_full.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_shallow.dat Y All 100 0.1  > $RESULTPATH/slac_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_trunk.dat Y All 100 0.1  > $RESULTPATH/slac_h3_trunk.md
 
 elif [[ $CHOICE -eq 5 ]]; then
     ### FUBAR on H3 #####
     echo "running fubar on all h3"
     $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_full.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_full.txt
-    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/shallow.dat Y 20 5 2000000 1000000 100 0.5  > $RESULTPATH/fubar_h3_shallow.txt
-    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/trunk.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_trunk.txt
+    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_shallow.dat Y 20 5 2000000 1000000 100 0.5  > $RESULTPATH/fubar_h3_shallow.txt
+    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_trunk.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_trunk.txt
 
 elif [[ $CHOICE -eq 6 ]]; then
     echo "running meme on full h3"
@@ -56,11 +56,11 @@ elif [[ $CHOICE -eq 6 ]]; then
 
 elif [[ $CHOICE -eq 7 ]]; then
     echo "running meme on shallow h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/shallow.dat Y All 0.1  > $RESULTPATH/meme_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_shallow.dat Y All 0.1  > $RESULTPATH/meme_h3_shallow.md
 
 elif [[ $CHOICE -eq 8 ]]; then
      echo "running meme on trunk h3"
-   $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/trunk.dat Y All 0.1  > $RESULTPATH/meme_h3_trunk.md
+   $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_trunk.dat Y All 0.1  > $RESULTPATH/meme_h3_trunk.md
 
 elif [[ $CHOICE -eq 9 ]]; then
     echo "running fel on full h3"
@@ -68,11 +68,11 @@ elif [[ $CHOICE -eq 9 ]]; then
 
 elif [[ $CHOICE -eq 10 ]]; then
     echo "running fel on shallow h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/shallow.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_shallow.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_shallow.md
 
 elif [[ $CHOICE -eq 11 ]]; then
      echo "running fel on trunk h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/trunk.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_trunk.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_trunk.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_trunk.md
 elif [[ $CHOICE -eq 12 ]]; then
      echo "running FEL with, without dS variation on CD2"
     
