@@ -52,20 +52,20 @@ with {})
 
 |          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
 |-----------------------------------|---------------|-------------|-----------------------------------|
-|        Negative selection         |     0.024     |   99.043    |                                   |
-|        Negative selection         |     0.098     |    0.921    |                                   |
-|      Diversifying selection       |    118.183    |    0.037    |                                   |
+|        Negative selection         |     0.024     |   99.151    |                                   |
+|        Negative selection         |     0.085     |    0.812    |                                   |
+|      Diversifying selection       |    118.143    |    0.037    |                                   |
 
 
 ### Performing the constrained (dN/dS > 1 not allowed) model fit
-* Log(L) = -5326.19, AIC-c = 10718.63 (33 estimated parameters)
+* Log(L) = -5326.18, AIC-c = 10718.63 (33 estimated parameters)
 * For *test* branches under the null (no dN/dS > 1 model), the following rate distribution for branch-site combinations was inferred
 
 |          Selection mode           |     dN/dS     |Proportion, %|               Notes               |
 |-----------------------------------|---------------|-------------|-----------------------------------|
-|        Negative selection         |     0.000     |   10.727    |                                   |
-|        Negative selection         |     0.000     |   85.962    |       Collapsed rate class        |
-|         Neutral evolution         |     1.000     |    3.311    |                                   |
+|        Negative selection         |     0.000     |   10.598    |                                   |
+|        Negative selection         |     0.000     |   86.086    |       Collapsed rate class        |
+|         Neutral evolution         |     1.000     |    3.316    |                                   |
 
 ----
 ## Branch-site unrestricted statistical test of episodic diversification [BUSTED]

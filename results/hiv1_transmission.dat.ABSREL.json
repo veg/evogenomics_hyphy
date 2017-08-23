@@ -1,422 +1,724 @@
 {
- "fits":{
-   "Global MG94xREV":{
-     "Log Likelihood":-5402.313941935407,
-     "estimated parameters":108,
-     "AIC-c":11021.55759481695,
-     "runtime":21,
-     "tree length":0.1069296752734674,
-     "tree":"(0564_7:0.00704849,(((((0564_11:0.00429663,0564_4:0.00627438)Node20:0.00258536,(0564_1:0.00582228,(0564_21:0.00122087,0564_5:0.00266143)Node25:0.000797555)Node23:0.00132605)Node19:0.00232302,0564_17:0.00565574)Node18:0.00104643,((0564_13:0.00540649,(0564_15:0,0564_16:0)Node32:0.00345125)Node30:0.00153155,((0564_22:0.00707296,0564_6:0.00560611)Node36:0.00125262,0564_3:0.00623712)Node35:0.00217149)Node29:0.00111314)Node17:0.00157763,0564_9:0.00590542)Node16:0.000419833,(((0557_24:0.000787719,0557_4:0.000787636,0557_2:0.000399118)Node9:0.00204615,0557_12:0.00269229)Node8:0.00121216,((0557_21:0,0557_22:0,0557_6:0.000391771,0557_9:0.000401877,0557_23:0,0557_11:0.0015684,0557_13:0.000401856,0557_26:0.000793695,(0557_5:0.00117536,0557_7:1.07899e-20)Node53:0.000391857)Node6:0.00120817,0557_25:0.00217426)Node7:0.00101401)Separator:0.0066795)",
-     "Rate Distributions":{
-       "0564_7":"[[0.60417,1]]",
-       "0564_11":"[[0.408088,1]]",
-       "0564_4":"[[0.492883,1]]",
-       "Node20":"[[10,1]]",
-       "0564_1":"[[1.05661,1]]",
-       "0564_21":"[[0.825322,1]]",
-       "0564_5":"[[10,1]]",
-       "Node25":"[[0,1]]",
-       "Node23":"[[0.262723,1]]",
-       "Node19":"[[1.93558,1]]",
-       "0564_17":"[[0.544118,1]]",
-       "Node18":"[[10,1]]",
-       "0564_13":"[[0.198218,1]]",
-       "0564_15":"[[10,1]]",
-       "0564_16":"[[10,1]]",
-       "Node32":"[[0.461712,1]]",
-       "Node30":"[[10,1]]",
-       "0564_22":"[[1.22918,1]]",
-       "0564_6":"[[0.315587,1]]",
-       "Node36":"[[0.912379,1]]",
-       "0564_3":"[[3.18361,1]]",
-       "Node35":"[[0.787226,1]]",
-       "Node29":"[[10,1]]",
-       "Node17":"[[10,1]]",
-       "0564_9":"[[0.788438,1]]",
-       "Node16":"[[0,1]]",
-       "0557_24":"[[0.3887,1]]",
-       "0557_4":"[[0.38878,1]]",
-       "0557_2":"[[0,1]]",
-       "Node9":"[[0.620047,1]]",
-       "0557_12":"[[0.495104,1]]",
-       "Node8":"[[10,1]]",
-       "0557_21":"[[10,1]]",
-       "0557_22":"[[10,1]]",
-       "0557_6":"[[10,1]]",
-       "0557_9":"[[0,1]]",
-       "0557_23":"[[10,1]]",
-       "0557_11":"[[10,1]]",
-       "0557_13":"[[0,1]]",
-       "0557_26":"[[0.389638,1]]",
-       "0557_5":"[[10,1]]",
-       "0557_7":"[[0,1]]",
-       "Node53":"[[10,1]]",
-       "Node6":"[[0.801126,1]]",
-       "0557_25":"[[0.685783,1]]",
-       "Node7":"[[10,1]]",
-       "Separator":"[[5.35475,1]]"
-      }
-    },
-   "Adaptive Model":{
-     "Log Likelihood":-5370.716850035581,
-     "estimated parameters":120,
-     "AIC-c":10982.58098199278,
-     "runtime":16,
-     "tree length":0.1328071023389055,
-     "tree":"(0564_7:0.00708425248880686,(((((0564_11:0.005264583103323274,0564_4:0.007160932742486174)Node20:0.002258185976600379,(0564_1:0.005831947138505839,(0564_21:0.001214983576044946,0564_5:0.002669872312230102)Node25:0.0007974613531286098)Node23:0.001420939584432846)Node19:0.001915168061303241,0564_17:0.006056372164628916)Node18:0.001002091810728849,((0564_13:0.005314177495426394,(0564_15:0,0564_16:0)Node32:0.004203871033238498)Node30:0.001889867942480499,((0564_22:0.006865604498213339,0564_6:0.005820877872385356)Node36:0.001255881236040389,0564_3:0.007960082931908497)Node35:0.02228476954071741)Node29:0.001034849155248324)Node17:0.001568160616878307,0564_9:0.005515560795845631)Node16:0.0007827898039193176,(((0557_24:0.000788026012187565,0557_4:0.0007879429810360021,0557_2:0.0003990540986821101)Node9:0.002062863094893842,0557_12:0.002675797387428463)Node8:0.001181909321995194,((0557_21:0,0557_22:0,0557_6:0.0003917364272464935,0557_9:0.0004022157335653138,0557_23:0,0557_11:0.001568468867830952,0557_13:0.0004016041975988952,0557_26:0.0007938624218284548,(0557_5:0.001176560957417625,0557_7:6.60095342436379e-23)Node53:0.0003918226536706527)Node6:0.001180812206709403,0557_25:0.002203034337487119)Node7:0.001033522744859423)Separator:0.008194585059946002)",
-     "Rate Distributions":{
-       "0564_7":"[[0.613916,1]]",
-       "0564_11":"[[0.00963382,0.986644],[43.397,0.0133559]]",
-       "0564_4":"[[0,0.979504],[30.3828,0.0204955]]",
-       "Node20":"[[1e+26,1]]",
-       "0564_1":"[[1.06734,1]]",
-       "0564_21":"[[0.826012,1]]",
-       "0564_5":"[[1e+26,1]]",
-       "Node25":"[[0,1]]",
-       "Node23":"[[0.312956,1]]",
-       "Node19":"[[1.53782,1]]",
-       "0564_17":"[[0.615679,1]]",
-       "Node18":"[[1e+26,1]]",
-       "0564_13":"[[0.189451,1]]",
-       "0564_15":"[[1,1]]",
-       "0564_16":"[[1,1]]",
-       "Node32":"[[0.00504685,0.989516],[61.2465,0.0104841]]",
-       "Node30":"[[1e+26,1]]",
-       "0564_22":"[[1.21047,1]]",
-       "0564_6":"[[0.34026,1]]",
-       "Node36":"[[0.923163,1]]",
-       "0564_3":"[[0,0.968268],[132.176,0.0317325]]",
-       "Node35":"[[0,0.998446],[10000,0.00155393]]",
-       "Node29":"[[1e+26,1]]",
-       "Node17":"[[1e+26,1]]",
-       "0564_9":"[[0.718966,1]]",
-       "Node16":"[[0.344131,1]]",
-       "0557_24":"[[0.392173,1]]",
-       "0557_4":"[[0.392254,1]]",
-       "0557_2":"[[0,1]]",
-       "Node9":"[[0.633405,1]]",
-       "0557_12":"[[0.493511,1]]",
-       "Node8":"[[1e+26,1]]",
-       "0557_21":"[[1,1]]",
-       "0557_22":"[[1,1]]",
-       "0557_6":"[[1e+26,1]]",
-       "0557_9":"[[0,1]]",
-       "0557_23":"[[1,1]]",
-       "0557_11":"[[1e+26,1]]",
-       "0557_13":"[[0,1]]",
-       "0557_26":"[[0.392977,1]]",
-       "0557_5":"[[1e+26,1]]",
-       "0557_7":"[[0,1]]",
-       "Node53":"[[1e+26,1]]",
-       "Node6":"[[0.780173,1]]",
-       "0557_25":"[[0.705743,1]]",
-       "Node7":"[[1e+26,1]]",
-       "Separator":"[[0,0.95918],[192.245,0.0408195]]"
-      }
+ "input":{
+   "file name":"/home/sjspielman/book-chapter-2017/datasets/hiv1_transmission.dat",
+   "number of sequences":26,
+   "number of sites":877,
+   "partition count":1,
+   "trees":{
+     "0":"(0564_7,(((((0564_11,0564_4)Node20,(0564_1,(0564_21,0564_5)Node25)Node23)Node19,0564_17)Node18,((0564_13,(0564_15)Node32)Node30,((0564_22,0564_6)Node36,0564_3)Node35)Node29)Node17,0564_9)Node16,(((0557_24,0557_4,0557_2)Node9,0557_12)Node8,((0557_21,0557_6,0557_9,0557_11,0557_13,0557_26,(0557_5,0557_7)Node53)Node6,0557_25)Node7)Separator)"
     }
   },
- "test results":{
-   "0564_7":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
+ "fits":{
+   "Baseline MG94xREV":{
+     "Log Likelihood":-5402.39913062117,
+     "estimated parameters":102,
+     "AIC-c":11009.7239407877,
+     "Rate Distributions":{
+       "Per-branch omega":{
+         "Mean":357142858.0311863,
+         "Median":0.6592850985049731,
+         "2.5%":0,
+         "97.5%":5.414127135782739
+        }
+      },
+     "display order":0
     },
-   "0564_11":{
-     "LRT":3.883561874908992,
-     "uncorrected p-value":0.05278667614894705,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_4":{
-     "LRT":4.726600505682654,
-     "uncorrected p-value":0.03417264401825304,
-     "tested":1,
-     "p-value":1
-    },
-   "Node20":{
-     "LRT":3.303330432208895,
-     "uncorrected p-value":0.07134702514882396,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_1":{
-     "LRT":-0.06114023021655157,
-     "uncorrected p-value":0.5,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_21":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_5":{
-     "LRT":4.52088885779267,
-     "uncorrected p-value":0.03798792188265765,
-     "tested":1,
-     "p-value":1
-    },
-   "Node25":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node23":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node19":{
-     "LRT":0.1545878756114689,
-     "uncorrected p-value":0.4165231252336182,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_17":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node18":{
-     "LRT":1.572624108839591,
-     "uncorrected p-value":0.1786217597861804,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_13":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_15":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_16":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node32":{
-     "LRT":4.910575712548962,
-     "uncorrected p-value":0.03109009338905644,
-     "tested":1,
-     "p-value":1
-    },
-   "Node30":{
-     "LRT":2.841980540964869,
-     "uncorrected p-value":0.09080862431619488,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_22":{
-     "LRT":0.1143414006037347,
-     "uncorrected p-value":0.4303807790342483,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_6":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node36":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_3":{
-     "LRT":14.04890747978243,
-     "uncorrected p-value":0.0003025794989710562,
-     "tested":1,
-     "p-value":0.01391865695266858
-    },
-   "Node35":{
-     "LRT":22.56188800282871,
-     "uncorrected p-value":4.190251976843307e-06,
-     "tested":1,
-     "p-value":0.0002011320948884787
-    },
-   "Node29":{
-     "LRT":1.495534594540004,
-     "uncorrected p-value":0.1862986591061901,
-     "tested":1,
-     "p-value":1
-    },
-   "Node17":{
-     "LRT":2.561835501446694,
-     "uncorrected p-value":0.1052289580682363,
-     "tested":1,
-     "p-value":1
-    },
-   "0564_9":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node16":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_24":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_4":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_2":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node9":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_12":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node8":{
-     "LRT":1.919365422874762,
-     "uncorrected p-value":0.1480896443613774,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_21":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_22":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_6":{
-     "LRT":0.5897093651783507,
-     "uncorrected p-value":0.3118982421055762,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_9":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_23":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_11":{
-     "LRT":2.651830867789613,
-     "uncorrected p-value":0.1003540653851193,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_13":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_26":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_5":{
-     "LRT":1.912619948549036,
-     "uncorrected p-value":0.148627018325712,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_7":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node53":{
-     "LRT":0.5898067275211361,
-     "uncorrected p-value":0.3118798350509887,
-     "tested":1,
-     "p-value":1
-    },
-   "Node6":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "0557_25":{
-     "LRT":"test not run",
-     "uncorrected p-value":1,
-     "tested":1,
-     "p-value":1
-    },
-   "Node7":{
-     "LRT":1.689108375558135,
-     "uncorrected p-value":0.1676683801709349,
-     "tested":1,
-     "p-value":1
-    },
-   "Separator":{
-     "LRT":14.1278323326078,
-     "uncorrected p-value":0.0002907860415110597,
-     "tested":1,
-     "p-value":0.01366694395101981
+   "Full adaptive model":{
+     "Log Likelihood":-5370.664971532836,
+     "estimated parameters":114,
+     "AIC-c":10970.4856710156,
+     "Rate Distributions":{
+      },
+     "display order":1
     }
   },
  "timers":{
-   "Complexity analysis":149,
-   "Testing":318,
-   "overall":505
+   "Overall":{
+     "timer":449,
+     "order":0
+    },
+   "Preliminary model fitting":{
+     "timer":1,
+     "order":1
+    },
+   "Baseline model fitting":{
+     "timer":7,
+     "order":2
+    },
+   "Complexity analysis":{
+     "timer":195,
+     "order":3
+    },
+   "Full adaptive model fitting":{
+     "timer":14,
+     "order":4
+    },
+   "Testing for selection":{
+     "timer":232,
+     "order":5
+    }
   },
- "input":{
-   "file name":"/home/sjspielman/book-chapter-2017/datasets/hiv1_transmission.dat",
-   "tree":"(0564_7:-1,(((((0564_11:-1,0564_4:-1)Node20:-1,(0564_1:-1,(0564_21:-1,0564_5:-1)Node25:-1)Node23:-1)Node19:-1,0564_17:-1)Node18:-1,((0564_13:-1,(0564_15:-1,0564_16:-1)Node32:-1)Node30:-1,((0564_22:-1,0564_6:-1)Node36:-1,0564_3:-1)Node35:-1)Node29:-1)Node17:-1,0564_9:-1)Node16:-1,(((0557_24:-1,0557_4:-1,0557_2:-1)Node9:-1,0557_12:-1)Node8:-1,((0557_21:-1,0557_22:-1,0557_6:-1,0557_9:-1,0557_23:-1,0557_11:-1,0557_13:-1,0557_26:-1,(0557_5:-1,0557_7:-1)Node53:-1)Node6:-1,0557_25:-1)Node7:-1)Separator:-1)",
-   "number of sequences":29,
-   "number of sites":877
+ "test results":{
+   "P-value threshold":0.05,
+   "tested":44,
+   "positive test results":3
   },
- "analysis":{
-   "info":"aBSREL (Adaptive branch-site random effects likelihood)\n                            uses an adaptive random effects branch-site model framework\n                            to test whether each branch has evolved under positive selection,\n                            using a procedure which infers an optimal number of rate categories per branch.",
-   "version":"1.0",
-   "citation":"Less Is More: An Adaptive Branch-Site Random Effects Model for Efficient Detection of Episodic Diversifying Selection (2015). Mol Biol Evol 32 (5): 1342-1353",
-   "authors":"Sergei L Kosakovsky Pond, Ben Murrell, Steven Weaver and Temple iGEM / UCSD viral evolution group",
-   "contact":"spond@temple.edu",
-   "requirements":"in-frame codon alignment and a phylogenetic tree"
+ "tested":{
+   "0":{
+     "0564_7":"test",
+     "0564_11":"test",
+     "0564_4":"test",
+     "Node20":"test",
+     "0564_1":"test",
+     "0564_21":"test",
+     "0564_5":"test",
+     "Node25":"test",
+     "Node23":"test",
+     "Node19":"test",
+     "0564_17":"test",
+     "Node18":"test",
+     "0564_13":"test",
+     "0564_15":"test",
+     "Node32":"test",
+     "Node30":"test",
+     "0564_22":"test",
+     "0564_6":"test",
+     "Node36":"test",
+     "0564_3":"test",
+     "Node35":"test",
+     "Node29":"test",
+     "Node17":"test",
+     "0564_9":"test",
+     "Node16":"test",
+     "0557_24":"test",
+     "0557_4":"test",
+     "0557_2":"test",
+     "Node9":"test",
+     "0557_12":"test",
+     "Node8":"test",
+     "0557_21":"test",
+     "0557_6":"test",
+     "0557_9":"test",
+     "0557_11":"test",
+     "0557_13":"test",
+     "0557_26":"test",
+     "0557_5":"test",
+     "0557_7":"test",
+     "Node53":"test",
+     "Node6":"test",
+     "0557_25":"test",
+     "Node7":"test",
+     "Separator":"test"
+    }
   },
- "convergence failures":0
+ "data partitions":{
+   "0":{
+     "name":"absrel.filter.default",
+     "coverage":[
+      [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 123, 124, 125, 126, 127, 128, 129, 130, 131, 132, 133, 134, 135, 136, 137, 138, 139, 140, 141, 142, 143, 144, 145, 146, 147, 148, 149, 150, 151, 152, 153, 154, 155, 156, 157, 158, 159, 160, 161, 162, 163, 164, 165, 166, 167, 168, 169, 170, 171, 172, 173, 174, 175, 176, 177, 178, 179, 180, 181, 182, 183, 184, 185, 186, 187, 188, 189, 190, 191, 192, 193, 194, 195, 196, 197, 198, 199, 200, 201, 202, 203, 204, 205, 206, 207, 208, 209, 210, 211, 212, 213, 214, 215, 216, 217, 218, 219, 220, 221, 222, 223, 224, 225, 226, 227, 228, 229, 230, 231, 232, 233, 234, 235, 236, 237, 238, 239, 240, 241, 242, 243, 244, 245, 246, 247, 248, 249, 250, 251, 252, 253, 254, 255, 256, 257, 258, 259, 260, 261, 262, 263, 264, 265, 266, 267, 268, 269, 270, 271, 272, 273, 274, 275, 276, 277, 278, 279, 280, 281, 282, 283, 284, 285, 286, 287, 288, 289, 290, 291, 292, 293, 294, 295, 296, 297, 298, 299, 300, 301, 302, 303, 304, 305, 306, 307, 308, 309, 310, 311, 312, 313, 314, 315, 316, 317, 318, 319, 320, 321, 322, 323, 324, 325, 326, 327, 328, 329, 330, 331, 332, 333, 334, 335, 336, 337, 338, 339, 340, 341, 342, 343, 344, 345, 346, 347, 348, 349, 350, 351, 352, 353, 354, 355, 356, 357, 358, 359, 360, 361, 362, 363, 364, 365, 366, 367, 368, 369, 370, 371, 372, 373, 374, 375, 376, 377, 378, 379, 380, 381, 382, 383, 384, 385, 386, 387, 388, 389, 390, 391, 392, 393, 394, 395, 396, 397, 398, 399, 400, 401, 402, 403, 404, 405, 406, 407, 408, 409, 410, 411, 412, 413, 414, 415, 416, 417, 418, 419, 420, 421, 422, 423, 424, 425, 426, 427, 428, 429, 430, 431, 432, 433, 434, 435, 436, 437, 438, 439, 440, 441, 442, 443, 444, 445, 446, 447, 448, 449, 450, 451, 452, 453, 454, 455, 456, 457, 458, 459, 460, 461, 462, 463, 464, 465, 466, 467, 468, 469, 470, 471, 472, 473, 474, 475, 476, 477, 478, 479, 480, 481, 482, 483, 484, 485, 486, 487, 488, 489, 490, 491, 492, 493, 494, 495, 496, 497, 498, 499, 500, 501, 502, 503, 504, 505, 506, 507, 508, 509, 510, 511, 512, 513, 514, 515, 516, 517, 518, 519, 520, 521, 522, 523, 524, 525, 526, 527, 528, 529, 530, 531, 532, 533, 534, 535, 536, 537, 538, 539, 540, 541, 542, 543, 544, 545, 546, 547, 548, 549, 550, 551, 552, 553, 554, 555, 556, 557, 558, 559, 560, 561, 562, 563, 564, 565, 566, 567, 568, 569, 570, 571, 572, 573, 574, 575, 576, 577, 578, 579, 580, 581, 582, 583, 584, 585, 586, 587, 588, 589, 590, 591, 592, 593, 594, 595, 596, 597, 598, 599, 600, 601, 602, 603, 604, 605, 606, 607, 608, 609, 610, 611, 612, 613, 614, 615, 616, 617, 618, 619, 620, 621, 622, 623, 624, 625, 626, 627, 628, 629, 630, 631, 632, 633, 634, 635, 636, 637, 638, 639, 640, 641, 642, 643, 644, 645, 646, 647, 648, 649, 650, 651, 652, 653, 654, 655, 656, 657, 658, 659, 660, 661, 662, 663, 664, 665, 666, 667, 668, 669, 670, 671, 672, 673, 674, 675, 676, 677, 678, 679, 680, 681, 682, 683, 684, 685, 686, 687, 688, 689, 690, 691, 692, 693, 694, 695, 696, 697, 698, 699, 700, 701, 702, 703, 704, 705, 706, 707, 708, 709, 710, 711, 712, 713, 714, 715, 716, 717, 718, 719, 720, 721, 722, 723, 724, 725, 726, 727, 728, 729, 730, 731, 732, 733, 734, 735, 736, 737, 738, 739, 740, 741, 742, 743, 744, 745, 746, 747, 748, 749, 750, 751, 752, 753, 754, 755, 756, 757, 758, 759, 760, 761, 762, 763, 764, 765, 766, 767, 768, 769, 770, 771, 772, 773, 774, 775, 776, 777, 778, 779, 780, 781, 782, 783, 784, 785, 786, 787, 788, 789, 790, 791, 792, 793, 794, 795, 796, 797, 798, 799, 800, 801, 802, 803, 804, 805, 806, 807, 808, 809, 810, 811, 812, 813, 814, 815, 816, 817, 818, 819, 820, 821, 822, 823, 824, 825, 826, 827, 828, 829, 830, 831, 832, 833, 834, 835, 836, 837, 838, 839, 840, 841, 842, 843, 844, 845, 846, 847, 848, 849, 850, 851, 852, 853, 854, 855, 856, 857, 858, 859, 860, 861, 862, 863, 864, 865, 866, 867, 868, 869, 870, 871, 872, 873, 874, 875, 876]
+      ]
+    }
+  },
+ "branch attributes":{
+   "0":{
+     "0557_21":{
+       "original name":"0557_21",
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Rate classes":1,
+       "Full adaptive model":0,
+       "Rate Distributions":[
+        [1, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_24":{
+       "original name":"0557_24",
+       "Baseline MG94xREV":0.0007871008340512762,
+       "Baseline MG94xREV omega ratio":0.3923503923185926,
+       "Rate classes":1,
+       "Full adaptive model":0.0007879301697085415,
+       "Rate Distributions":[
+        [0.3922901337532217, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_6":{
+       "original name":"0557_6",
+       "Baseline MG94xREV":0.000391878681826288,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.0003919409722650934,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":0.6621536417551397,
+       "Uncorrected P-value":0.2986051303761961,
+       "Corrected P-value":1
+      },
+     "0557_11":{
+       "original name":"0557_11",
+       "Baseline MG94xREV":0.001569006955116595,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.0015698541447275,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":2.65063409580398,
+       "Uncorrected P-value":0.1004173301100481,
+       "Corrected P-value":1
+      },
+     "0557_12":{
+       "original name":"0557_12",
+       "Baseline MG94xREV":0.002692585105806803,
+       "Baseline MG94xREV omega ratio":0.4995554811022032,
+       "Rate classes":1,
+       "Full adaptive model":0.002675306509053737,
+       "Rate Distributions":[
+        [0.4933150433802762, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_13":{
+       "original name":"0557_13",
+       "Baseline MG94xREV":0.0004014414929976017,
+       "Baseline MG94xREV omega ratio":0,
+       "Rate classes":1,
+       "Full adaptive model":0.0004017416377352636,
+       "Rate Distributions":[
+        [0, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_25":{
+       "original name":"0557_25",
+       "Baseline MG94xREV":0.002175269785278307,
+       "Baseline MG94xREV omega ratio":0.6925460283501996,
+       "Rate classes":1,
+       "Full adaptive model":0.002203717210704726,
+       "Rate Distributions":[
+        [0.7058754842702883, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_26":{
+       "original name":"0557_26",
+       "Baseline MG94xREV":0.0007935989375402358,
+       "Baseline MG94xREV omega ratio":0.3931406487843033,
+       "Rate classes":1,
+       "Full adaptive model":0.0007937695407745558,
+       "Rate Distributions":[
+        [0.3929091744909584, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_2":{
+       "original name":"0557_2",
+       "Baseline MG94xREV":0.0003987732634880109,
+       "Baseline MG94xREV omega ratio":0,
+       "Rate classes":1,
+       "Full adaptive model":0.0003991658326762307,
+       "Rate Distributions":[
+        [0, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_4":{
+       "original name":"0557_4",
+       "Baseline MG94xREV":0.0007870677521864327,
+       "Baseline MG94xREV omega ratio":0.3922437052431046,
+       "Rate classes":1,
+       "Full adaptive model":0.0007878958192021991,
+       "Rate Distributions":[
+        [0.3921533873387391, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_5":{
+       "original name":"0557_5",
+       "Baseline MG94xREV":0.001176179999712227,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.00117641117104513,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":1.98893541923826,
+       "Uncorrected P-value":0.1426665361827567,
+       "Corrected P-value":1
+      },
+     "0557_7":{
+       "original name":"0557_7",
+       "Baseline MG94xREV":0,
+       "Baseline MG94xREV omega ratio":1,
+       "Rate classes":1,
+       "Full adaptive model":0,
+       "Rate Distributions":[
+        [1, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0557_9":{
+       "original name":"0557_9",
+       "Baseline MG94xREV":0.0004017293924859571,
+       "Baseline MG94xREV omega ratio":0,
+       "Rate classes":1,
+       "Full adaptive model":0.0004020210319593735,
+       "Rate Distributions":[
+        [0, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_11":{
+       "original name":"0564_11",
+       "Baseline MG94xREV":0.004292442332284749,
+       "Baseline MG94xREV omega ratio":0.4118756279759579,
+       "Rate classes":2,
+       "Full adaptive model":0.005272679063666866,
+       "Rate Distributions":[
+        [0, 0.9860672522817131],
+        [42.79984883126327, 0.0139327477182869]
+        ],
+       "LRT":3.960516006784019,
+       "Uncorrected P-value":0.05072597042424454,
+       "Corrected P-value":1
+      },
+     "0564_13":{
+       "original name":"0564_13",
+       "Baseline MG94xREV":0.00540489158901426,
+       "Baseline MG94xREV omega ratio":0.2002093360825711,
+       "Rate classes":1,
+       "Full adaptive model":0.005306603529832318,
+       "Rate Distributions":[
+        [0.1887607282324889, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_15":{
+       "original name":"0564_15",
+       "Baseline MG94xREV":0.002605926390914771,
+       "Baseline MG94xREV omega ratio":0.9719614910584327,
+       "Rate classes":2,
+       "Full adaptive model":0.003469886119255255,
+       "Rate Distributions":[
+        [0, 0.9886749497001014],
+        [110.462939849681, 0.01132505029989861]
+        ],
+       "LRT":4.974432218588845,
+       "Uncorrected P-value":0.03008725933970563,
+       "Corrected P-value":1
+      },
+     "0564_17":{
+       "original name":"0564_17",
+       "Baseline MG94xREV":0.005658171763607522,
+       "Baseline MG94xREV omega ratio":0.5497080452235434,
+       "Rate classes":1,
+       "Full adaptive model":0.006055820059492908,
+       "Rate Distributions":[
+        [0.6156301699252764, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_1":{
+       "original name":"0564_1",
+       "Baseline MG94xREV":0.005821587968631583,
+       "Baseline MG94xREV omega ratio":1.066241615576564,
+       "Rate classes":1,
+       "Full adaptive model":0.005832387224978807,
+       "Rate Distributions":[
+        [1.067031827441316, 1]
+        ],
+       "LRT":0.01052695564067108,
+       "Uncorrected P-value":0.4820810422281419,
+       "Corrected P-value":1
+      },
+     "0564_21":{
+       "original name":"0564_21",
+       "Baseline MG94xREV":0.001220951443153915,
+       "Baseline MG94xREV omega ratio":0.8334722788913155,
+       "Rate classes":1,
+       "Full adaptive model":0.001215373073605258,
+       "Rate Distributions":[
+        [0.826648980379631, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_22":{
+       "original name":"0564_22",
+       "Baseline MG94xREV":0.007076396020920841,
+       "Baseline MG94xREV omega ratio":1.240012666989051,
+       "Rate classes":1,
+       "Full adaptive model":0.006869810746051972,
+       "Rate Distributions":[
+        [1.215197147657714, 1]
+        ],
+       "LRT":0.114986864518869,
+       "Uncorrected P-value":0.4301457392242478,
+       "Corrected P-value":1
+      },
+     "0564_3":{
+       "original name":"0564_3",
+       "Baseline MG94xREV":0.006235407657807315,
+       "Baseline MG94xREV omega ratio":3.213252643686989,
+       "Rate classes":2,
+       "Full adaptive model":0.007919187077747499,
+       "Rate Distributions":[
+        [0, 0.9686278042892772],
+        [127.6584828507112, 0.03137219571072281]
+        ],
+       "LRT":14.05683607861647,
+       "Uncorrected P-value":0.0003013734311592131,
+       "Corrected P-value":0.01265768410868695
+      },
+     "0564_4":{
+       "original name":"0564_4",
+       "Baseline MG94xREV":0.006275012159731416,
+       "Baseline MG94xREV omega ratio":0.4979756860115178,
+       "Rate classes":2,
+       "Full adaptive model":0.007141818044610972,
+       "Rate Distributions":[
+        [2.904269293053772e-13, 0.978477036298978],
+        [28.8915503756873, 0.02152296370102202]
+        ],
+       "LRT":4.80587849499716,
+       "Uncorrected P-value":0.03280807118084078,
+       "Corrected P-value":1
+      },
+     "0564_5":{
+       "original name":"0564_5",
+       "Baseline MG94xREV":0.00266217593585986,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.002669209350783264,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":4.519277517074443,
+       "Uncorrected P-value":0.03801945248088656,
+       "Corrected P-value":1
+      },
+     "0564_6":{
+       "original name":"0564_6",
+       "Baseline MG94xREV":0.005604342896617545,
+       "Baseline MG94xREV omega ratio":0.3190028369556239,
+       "Rate classes":1,
+       "Full adaptive model":0.005815230192904236,
+       "Rate Distributions":[
+        [0.3391996202464157, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_7":{
+       "original name":"0564_7",
+       "Baseline MG94xREV":0.007047403338815341,
+       "Baseline MG94xREV omega ratio":0.609886104902733,
+       "Rate classes":1,
+       "Full adaptive model":0.007088443461773626,
+       "Rate Distributions":[
+        [0.6143965312388933, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "0564_9":{
+       "original name":"0564_9",
+       "Baseline MG94xREV":0.005906486326474771,
+       "Baseline MG94xREV omega ratio":0.7963903414645012,
+       "Rate classes":1,
+       "Full adaptive model":0.005515061535430389,
+       "Rate Distributions":[
+        [0.7194026032906262, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node16":{
+       "Baseline MG94xREV":0.000419203036578178,
+       "Baseline MG94xREV omega ratio":0,
+       "Rate classes":1,
+       "Full adaptive model":0.0007837328342824912,
+       "Rate Distributions":[
+        [0.3453375098722521, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node17":{
+       "Baseline MG94xREV":0.001577968757601209,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.001569114594460967,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":2.634311277235611,
+       "Uncorrected P-value":0.1012843441874592,
+       "Corrected P-value":1
+      },
+     "Node18":{
+       "Baseline MG94xREV":0.00104739914539599,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.001001775313553493,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":1.646679629722712,
+       "Uncorrected P-value":0.1715712352666041,
+       "Corrected P-value":1
+      },
+     "Node19":{
+       "Baseline MG94xREV":0.00232442789858373,
+       "Baseline MG94xREV omega ratio":1.955099240517664,
+       "Rate classes":1,
+       "Full adaptive model":0.001914697280588898,
+       "Rate Distributions":[
+        [1.537454625113302, 1]
+        ],
+       "LRT":0.1538593788518483,
+       "Uncorrected P-value":0.4167613161961614,
+       "Corrected P-value":1
+      },
+     "Node20":{
+       "Baseline MG94xREV":0.002589367822856107,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.002257397133771954,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":3.300600310454683,
+       "Uncorrected P-value":0.07144859560686978,
+       "Corrected P-value":1
+      },
+     "Node23":{
+       "Baseline MG94xREV":0.001323788415399048,
+       "Baseline MG94xREV omega ratio":0.2644160887887396,
+       "Rate classes":1,
+       "Full adaptive model":0.001420564646822978,
+       "Rate Distributions":[
+        [0.3126092723307159, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node25":{
+       "Baseline MG94xREV":0.0007964638315444047,
+       "Baseline MG94xREV omega ratio":0,
+       "Rate classes":1,
+       "Full adaptive model":0.0007972108011446168,
+       "Rate Distributions":[
+        [0, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node29":{
+       "Baseline MG94xREV":0.001113928586333307,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.00104890479859648,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":1.509731328065754,
+       "Uncorrected P-value":0.1848581450753916,
+       "Corrected P-value":1
+      },
+     "Node30":{
+       "Baseline MG94xREV":0.00152666980910388,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.001882426933567275,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":2.865175781702419,
+       "Uncorrected P-value":0.08971028934355904,
+       "Corrected P-value":1
+      },
+     "Node32":{
+       "Baseline MG94xREV":0.000848409512456278,
+       "Baseline MG94xREV omega ratio":0.006499643260219921,
+       "Rate classes":1,
+       "Full adaptive model":0.0007522058368529595,
+       "Rate Distributions":[
+        [0, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node35":{
+       "Baseline MG94xREV":0.002171282643308138,
+       "Baseline MG94xREV omega ratio":0.7955955713826491,
+       "Rate classes":2,
+       "Full adaptive model":0.01748855112740497,
+       "Rate Distributions":[
+        [0, 0.9987934792830966],
+        [9999.999999998339, 0.001206520716903414]
+        ],
+       "LRT":22.65142315003868,
+       "Uncorrected P-value":4.006088180630307e-06,
+       "Corrected P-value":0.0001762678799477335
+      },
+     "Node36":{
+       "Baseline MG94xREV":0.001253327122962723,
+       "Baseline MG94xREV omega ratio":0.9222234558591703,
+       "Rate classes":1,
+       "Full adaptive model":0.001259049546564308,
+       "Rate Distributions":[
+        [0.9269485404948949, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node53":{
+       "Baseline MG94xREV":0.0003918941468222813,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.0003919734168893653,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":0.6607531685385766,
+       "Uncorrected P-value":0.2988547491844505,
+       "Corrected P-value":1
+      },
+     "Node6":{
+       "Baseline MG94xREV":0.001208764631522198,
+       "Baseline MG94xREV omega ratio":0.8094057068960406,
+       "Rate classes":1,
+       "Full adaptive model":0.00118062090295697,
+       "Rate Distributions":[
+        [0.7801275955358926, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Node7":{
+       "Baseline MG94xREV":0.001013553400942939,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.00103488916968967,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":1.690453947561764,
+       "Uncorrected P-value":0.1675461892506016,
+       "Corrected P-value":1
+      },
+     "Node8":{
+       "Baseline MG94xREV":0.001212505596403656,
+       "Baseline MG94xREV omega ratio":10000000000,
+       "Rate classes":1,
+       "Full adaptive model":0.001182053788878308,
+       "Rate Distributions":[
+        [10000000000, 1]
+        ],
+       "LRT":1.991771547152894,
+       "Uncorrected P-value":0.1424499838361187,
+       "Corrected P-value":1
+      },
+     "Node9":{
+       "Baseline MG94xREV":0.002045514469731713,
+       "Baseline MG94xREV omega ratio":0.6260241686597465,
+       "Rate classes":1,
+       "Full adaptive model":0.002064828850564413,
+       "Rate Distributions":[
+        [0.6348271686527784, 1]
+        ],
+       "LRT":0,
+       "Uncorrected P-value":1,
+       "Corrected P-value":1
+      },
+     "Separator":{
+       "Baseline MG94xREV":0.006684635591962938,
+       "Baseline MG94xREV omega ratio":5.414127135782739,
+       "Rate classes":2,
+       "Full adaptive model":0.008220505035669999,
+       "Rate Distributions":[
+        [0, 0.9604746827632286],
+        [197.7202773201257, 0.03952531723677144]
+        ],
+       "LRT":14.12748703252873,
+       "Uncorrected P-value":0.0002908366226528902,
+       "Corrected P-value":0.01250597477407428
+      }
+    },
+   "attributes":{
+     "original name":{
+       "attribute type":"node label",
+       "display order":0
+      },
+     "Baseline MG94xREV":{
+       "attribute type":"branch length",
+       "display order":1
+      },
+     "Baseline MG94xREV omega ratio":{
+       "attribute type":"branch label",
+       "display order":1
+      },
+     "Rate classes":{
+       "attribute type":"branch label",
+       "display order":2
+      },
+     "Full adaptive model":{
+       "attribute type":"branch length",
+       "display order":2
+      },
+     "Rate Distributions":{
+       "attribute type":"branch label",
+       "display order":3
+      },
+     "LRT":{
+       "attribute type":"branch label",
+       "display order":4
+      },
+     "Uncorrected P-value":{
+       "attribute type":"branch label",
+       "display order":5
+      },
+     "Corrected P-value":{
+       "attribute type":"branch label",
+       "display order":6
+      }
+    }
+  }
 }
