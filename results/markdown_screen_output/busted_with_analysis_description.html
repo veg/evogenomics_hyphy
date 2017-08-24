@@ -1,0 +1,121 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title></title>
+  <style type="text/css">code{white-space: pre;}</style>
+</head>
+<body>
+<h2 id="analysis-description">Analysis Description</h2>
+<p>BUSTED (branch-site unrestricted statistical test of episodic diversification) uses a random effects branch-site model fitted jointly to all or a subset of tree branches in order to test for alignment-wide evidence of episodic diversifying selection. Assuming there is evidence of positive selection (i.e. there is an omega &gt; 1), BUSTED will also perform a quick evidence-ratio style analysis to explore which individual sites may have been subject to selection.</p>
+<ul>
+<li><p><strong>Requirements</strong>: in-frame codon alignment and a phylogenetic tree (optionally annotated with {})</p></li>
+<li><p><strong>Citation</strong>: <em>Gene-wide identification of episodic selection</em>, Mol Biol Evol. 32(5):1365-71</p></li>
+<li><p><strong>Written by</strong>: Sergei L Kosakovsky Pond</p></li>
+<li><p><strong>Contact Information</strong>: spond@temple.edu</p></li>
+<li><p><strong>Analysis Version</strong>: 1.2</p></li>
+</ul>
+<blockquote>
+<p>A tree was found in the data file: <code>(((((((HUM,PAN),GOR),PON),GIB),(MAC,BAB)),MAR),BUS)</code></p>
+</blockquote>
+<blockquote>
+<p>Would you like to use it (y/n)? Y</p>
+</blockquote>
+<blockquote>
+<p>Loaded a multiple sequence alignment with <strong>9</strong> sequences, <strong>949</strong> codons, and <strong>1</strong> partitions from <code>/home/sjspielman/book-chapter-2017/datasets/ksr2.dat</code></p>
+</blockquote>
+<h3 id="branches-to-test-for-selection-in-the-busted-analysis">Branches to test for selection in the BUSTED analysis</h3>
+<ul>
+<li>Selected 15 branches to test in the BUSTED analysis: <code>HUM, PAN, Node6, GOR, Node5, PON, Node4, GIB, Node3, MAC, BAB, Node12, Node2, MAR, BUS</code></li>
+</ul>
+<h3 id="obtaining-branch-lengths-and-nucleotide-substitution-biases-under-the-nucleotide-gtr-model">Obtaining branch lengths and nucleotide substitution biases under the nucleotide GTR model</h3>
+<ul>
+<li>Log(L) = -5768.01, AIC-c = 11582.06 (23 estimated parameters)</li>
+</ul>
+<h3 id="obtaining-the-global-omega-estimate-based-on-relative-gtr-branch-lengths-and-nucleotide-substitution-biases">Obtaining the global omega estimate based on relative GTR branch lengths and nucleotide substitution biases</h3>
+<ul>
+<li>Log(L) = -5342.48, AIC-c = 10745.17 (30 estimated parameters)</li>
+<li>non-synonymous/synonymous rate ratio for <em>test</em> = 0.0342</li>
+</ul>
+<h3 id="improving-branch-lengths-nucleotide-substitution-biases-and-global-dnds-ratios-under-a-full-codon-model">Improving branch lengths, nucleotide substitution biases, and global dN/dS ratios under a full codon model</h3>
+<ul>
+<li>Log(L) = -5333.46, AIC-c = 10727.13 (30 estimated parameters)</li>
+<li>non-synonymous/synonymous rate ratio for <em>test</em> = 0.0307</li>
+</ul>
+<h3 id="performing-the-full-dnds-1-allowed-branch-site-model-fit">Performing the full (dN/dS &gt; 1 allowed) branch-site model fit</h3>
+<ul>
+<li>Log(L) = -5319.67, AIC-c = 10707.62 (34 estimated parameters)</li>
+<li>For <em>test</em> branches, the following rate distribution for branch-site combinations was inferred</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Selection mode</th>
+<th>dN/dS</th>
+<th>Proportion, %</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Negative selection</td>
+<td>0.024</td>
+<td>99.151</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Negative selection</td>
+<td>0.085</td>
+<td>0.812</td>
+<td></td>
+</tr>
+<tr class="odd">
+<td>Diversifying selection</td>
+<td>118.143</td>
+<td>0.037</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="performing-the-constrained-dnds-1-not-allowed-model-fit">Performing the constrained (dN/dS &gt; 1 not allowed) model fit</h3>
+<ul>
+<li>Log(L) = -5326.18, AIC-c = 10718.63 (33 estimated parameters)</li>
+<li>For <em>test</em> branches under the null (no dN/dS &gt; 1 model), the following rate distribution for branch-site combinations was inferred</li>
+</ul>
+<table>
+<thead>
+<tr class="header">
+<th>Selection mode</th>
+<th>dN/dS</th>
+<th>Proportion, %</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Negative selection</td>
+<td>0.000</td>
+<td>10.598</td>
+<td></td>
+</tr>
+<tr class="even">
+<td>Negative selection</td>
+<td>0.000</td>
+<td>86.086</td>
+<td>Collapsed rate class</td>
+</tr>
+<tr class="odd">
+<td>Neutral evolution</td>
+<td>1.000</td>
+<td>3.316</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="branch-site-unrestricted-statistical-test-of-episodic-diversification-busted">Branch-site unrestricted statistical test of episodic diversification [BUSTED]</h2>
+<p>Likelihood ratio test for episodic diversifying positive selection, <strong>p = 0.0015</strong>.</p>
+</body>
+</html>
