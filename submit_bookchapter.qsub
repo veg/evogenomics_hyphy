@@ -8,7 +8,7 @@
 
 export PATH=/usr/local/bin:$PATH
 
-PROJPATH=/home/sjspielman/book-chapter-2017
+PROJPATH=/home/sjspielman/evogenomics_hyphy
 DATAPATH=$PROJPATH/datasets
 RESULTPATH=$PROJPATH/results
 
@@ -21,67 +21,67 @@ BATCHPATH=$LIBPATH/TemplateBatchFiles/SelectionAnalyses
 
 
 if [[ $CHOICE -eq 1 ]]; then
-    #### BUSTED on ksr2 dataset ####
+    #### BUSTED on ksr2.fnaaset ####
     echo "running busted on ksr2"
 
-    $MP LIBPATH=$LIBPATH $BATCHPATH/BUSTED.bf Universal $DATAPATH/ksr2.dat Y "All" > $RESULTPATH/busted_ksr2.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/BUSTED.bf Universal $DATAPATH/ksr2.fna Y "All" > $RESULTPATH/busted_ksr2.md
 
 elif [[ $CHOICE -eq 2 ]]; then
-    #### RELAX on pb2 dataset ####
+    #### RELAX on pb2.fnaaset ####
     echo "running relax on pb2"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/RELAX.bf Universal $DATAPATH/pb2.dat Y "test" "All"  > $RESULTPATH/relax_pb2.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/RELAX.bf Universal $DATAPATH/pb2.fna Y "test" "All"  > $RESULTPATH/relax_pb2.md
 
 elif [[ $CHOICE -eq 3 ]]; then
     ### ABSREL on HIV ###
     echo "running absrel on hiv"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/aBSREL.bf Universal $DATAPATH/hiv1_transmission.dat Y All > $RESULTPATH/absrel_hiv.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/aBSREL.bf Universal $DATAPATH/hiv1_transmission.fna Y All > $RESULTPATH/absrel_hiv.md
 
 elif [[ $CHOICE -eq 4 ]]; then
     ### SLAC on H3 ###
     echo "running slac on all h3"
-    #$MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_full.dat Y All 100 0.1  > $RESULTPATH/slac_h3_full.md
-    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_shallow.dat Y All 100 0.1  > $RESULTPATH/slac_h3_shallow.md
-    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_trunk.dat Y All 100 0.1  > $RESULTPATH/slac_h3_trunk.md
+    #$MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_full.fna Y All 100 0.1  > $RESULTPATH/slac_h3_full.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_shallow.fna Y All 100 0.1  > $RESULTPATH/slac_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/SLAC.bf Universal $DATAPATH/h3_trunk.fna Y All 100 0.1  > $RESULTPATH/slac_h3_trunk.md
 
 elif [[ $CHOICE -eq 5 ]]; then
     ### FUBAR on H3 #####
     echo "running fubar on all h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_full.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_full.txt
-    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_shallow.dat Y 20 5 2000000 1000000 100 0.5  > $RESULTPATH/fubar_h3_shallow.txt
-    $MP LIBPATH=$LIBPATH $BATCHPATH/../FUBAR.bf Universal 1 $DATAPATH/h3_trunk.dat Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_trunk.txt
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FUBAR.bf Universal $DATAPATH/h3_full.fna Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_full.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FUBAR.bf Universal $DATAPATH/h3_shallow.fna Y 20 5 2000000 1000000 100 0.5  > $RESULTPATH/fubar_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FUBAR.bf Universal $DATAPATH/h3_trunk.fna Y 20 5 2000000 1000000 100 0.5   > $RESULTPATH/fubar_h3_trunk.md
 
 elif [[ $CHOICE -eq 6 ]]; then
     echo "running meme on full h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_full.dat Y All 0.1    > $RESULTPATH/meme_h3_full.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_full.fna Y All 0.1    > $RESULTPATH/meme_h3_full.md
 
 elif [[ $CHOICE -eq 7 ]]; then
     echo "running meme on shallow h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_shallow.dat Y All 0.1  > $RESULTPATH/meme_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_shallow.fna Y All 0.1  > $RESULTPATH/meme_h3_shallow.md
 
 elif [[ $CHOICE -eq 8 ]]; then
      echo "running meme on trunk h3"
-   $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_trunk.dat Y All 0.1  > $RESULTPATH/meme_h3_trunk.md
+   $MP LIBPATH=$LIBPATH $BATCHPATH/MEME.bf Universal $DATAPATH/h3_trunk.fna Y All 0.1  > $RESULTPATH/meme_h3_trunk.md
 
 elif [[ $CHOICE -eq 9 ]]; then
     echo "running fel on full h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_full.dat Y All Yes 0.1   > $RESULTPATH/fel_h3_full.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_full.fna Y All Yes 0.1   > $RESULTPATH/fel_h3_full.md
 
 elif [[ $CHOICE -eq 10 ]]; then
     echo "running fel on shallow h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_shallow.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_shallow.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_shallow.fna Y All Yes 0.1  > $RESULTPATH/fel_h3_shallow.md
 
 elif [[ $CHOICE -eq 11 ]]; then
      echo "running fel on trunk h3"
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_trunk.dat Y All Yes 0.1  > $RESULTPATH/fel_h3_trunk.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/h3_trunk.fna Y All Yes 0.1  > $RESULTPATH/fel_h3_trunk.md
 elif [[ $CHOICE -eq 12 ]]; then
      echo "running FEL with, without dS variation on CD2"
     
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/CD2.dat Y All Yes 0.1   > $RESULTPATH/fel_cd2_dsvariation.md
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/CD2-ds1.dat Y All No 0.1   > $RESULTPATH/fel_cd2_nodsvariation.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/CD2.fna Y All Yes 0.1   > $RESULTPATH/fel_cd2_dsvariation.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/CD2-ds1.fna Y All No 0.1   > $RESULTPATH/fel_cd2_nodsvariation.md
 elif [[ $CHOICE -eq 13 ]]; then
      echo "running FEL with, without GARD partitions on cvf"
 
-    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/cvf.dat Y All Yes 0.1   > $RESULTPATH/fel_cvf_nopartitions.md
+    $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/cvf.fna Y All Yes 0.1   > $RESULTPATH/fel_cvf_nopartitions.md
     $MP LIBPATH=$LIBPATH $BATCHPATH/FEL.bf Universal $DATAPATH/cvf_gard.nexus All Yes 0.1   > $RESULTPATH/fel_cvf_gardpartitions.md
     
 
