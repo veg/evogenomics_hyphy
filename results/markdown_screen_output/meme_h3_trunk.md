@@ -12,7 +12,7 @@ the tree affected. A subset of branches can be selected for testing as
 well, in which case an additional (nuisance) parameter will be inferred
 -- the non-synonymous rate on branches NOT selected for testing.
 Multiple partitions within a NEXUS file are also supported for
-recombination - aware analysis. 
+recombination - aware analysis.
 
 - __Requirements__: in-frame codon alignment and a phylogenetic tree
 
@@ -54,11 +54,12 @@ Selected 323 branches to include in the MEME analysis: `KF790010, CY147300, CY16
 
 |   Codon    | Partition  |   alpha    |   beta+    |     p+     |    LRT     |Episodic selection detected?| # branches |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:--------------------------:|:----------:|
-|     64     |     1      |    0.000   |   14.717   |    0.204   |    3.512   |      Yes, p =  0.0816      |     0      |
-|    154     |     1      |    0.000   |   35.302   |    0.145   |    5.334   |      Yes, p =  0.0317      |     0      |
-|    171     |     1      |    0.000   |   45.005   |    0.017   |    5.753   |      Yes, p =  0.0256      |     0      |
-|    208     |     1      |    0.000   |   59.749   |    0.089   |    5.554   |      Yes, p =  0.0283      |     0      |
-|    242     |     1      |    1.839   |   34.114   |    0.216   |    4.273   |      Yes, p =  0.0549      |     0      |
-|    402     |     1      |    0.000   |   10.476   |    0.091   |    3.493   |      Yes, p =  0.0824      |     0      |
+|     64     |     1      |    0.000   |   14.635   |    0.205   |    3.513   |      Yes, p =  0.0816      |     5      |
+|    154     |     1      |    0.000   |   29.716   |    0.165   |    5.325   |      Yes, p =  0.0319      |     8      |
+|    171     |     1      |    0.000   |   44.857   |    0.017   |    5.751   |      Yes, p =  0.0256      |     1      |
+|    208     |     1      |    0.000   |   58.341   |    0.091   |    5.555   |      Yes, p =  0.0283      |     6      |
+|    242     |     1      |    1.836   |   34.422   |    0.215   |    4.272   |      Yes, p =  0.0549      |     7      |
+|    402     |     1      |    0.000   |   10.469   |    0.091   |    3.494   |      Yes, p =  0.0824      |     2      |
+
 
 ### ** Found _6_ sites under episodic diversifying positive selection at p <= 0.1**

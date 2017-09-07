@@ -54,7 +54,7 @@ Selected 239 branches to include in the MEME analysis: `KF790049, CY134956, CY18
 
 |   Codon    | Partition  |   alpha    |   beta+    |     p+     |    LRT     |Episodic selection detected?| # branches |
 |:----------:|:----------:|:----------:|:----------:|:----------:|:----------:|:--------------------------:|:----------:|
-|     49     |     1      |    0.000   |  167.379   |    0.065   |    3.580   |      Yes, p =  0.0787      |     0      |
-|    320     |     1      |    0.000   |  437.674   |    0.010   |    3.230   |      Yes, p =  0.0946      |     0      |
+|     49     |     1      |    0.000   |  167.379   |    0.065   |    3.580   |      Yes, p =  0.0787      |     3      |
+|    320     |     1      |    0.000   |  437.674   |    0.010   |    3.230   |      Yes, p =  0.0946      |     1      |
 
 ### ** Found _2_ sites under episodic diversifying positive selection at p <= 0.1**
