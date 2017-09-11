@@ -1,9 +1,12 @@
-Accompanying datasets and analyses for Datamonkey 2017 manuscript
+Accompanying datasets and analyses for 
+**Evolutionary genomics: statistical and computational methods**, Ch. *Evolution of viral genomes: interplay between selection, recombination and other forces*.
+
 ------------
- + `preparation/` contains files, scripts, raw data to generate and/or determine datasets for final analyses
- + `datasets/` contains all datasets used in HyPhy analyses. 
- + `results/` contains all stdout and JSON files generated from HyPhy analysis of data in `datasets/`
 
+ + `datasets/` contains all datasets used in the main body of the book chapter analyses. 
+ + `results/` contains all markdown output and JSON files generated from HyPhy analysis of data in `datasets/`
+ + `exercises/` contains datasets and expected results for book chapter exercises
+ + `figures/` contain figures used in book chapter manuscript
+ + `preparation/` contains files, scripts, raw data to generate HIV1, H3, and PB2 datasets for analyses
 
-
-We will demonstrate GARD using 13 glycoprotein sequences from Cache Valley Fever virus (CVFv, file CVFg.fas). 
+Please direct any questions to `stephanie.spielman@temple.edu` or `spond@temple.edu`.

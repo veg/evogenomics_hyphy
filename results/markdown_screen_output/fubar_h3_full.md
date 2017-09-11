@@ -84,6 +84,7 @@ selection (2013), Mol Biol Evol. 30(5):1196-205
 |      241       |       1        |        2.597   |        7.125   |      394.431   |       Pos. posterior = 0.9988       |
 |      278       |       1        |        0.316   |        1.032   |      306.545   |       Pos. posterior = 0.9512       |
 |      538       |       1        |        0.766   |        2.523   |      137.063   |       Pos. posterior = 0.9193       |
+
 ----
 ## FUBAR inferred 13 sites subject to diversifying positive selection at posterior probability >= 0.9
 Of these,  0.50 are expected to be false positives (95% confidence interval of 0-2 )
